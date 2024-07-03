@@ -32,11 +32,11 @@ Example request: {
                         "movement_z": 30.1
                         } # Replace with the actual movement data
 
-2. /get_sessions: Get all sessions for specific patient
+2. /get_sessions: Get all sessions for a specific patient
 3. /average_session_duration: Get average session duration
 4. /session_summary: Generate a summary report for a given patient
 
-NOTE!: in all the other 4 request need to add 'patient_id'. 
+NOTE!: in all the other 3 request need to add 'patient_id'. 
 
 # validation rules
 1. "patient_id" is uniqe to each patient - can't be 2 patient with the same "patient_id".
