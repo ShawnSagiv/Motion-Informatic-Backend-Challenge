@@ -6,10 +6,11 @@ We are working on a cutting-edge project aimed at rehabilitating disordered hand
 
 ## Installation
 
-STEP 1: build the docker-image using build.sh script or pull it from artifactory (if we have we can push it)
+1. build the docker-image using build.sh script or pull it from artifactory (if we have we can push it)
 NOTE!: the build script is to build it locally on macOS machine. for other OS need adjustment according. 
-STEP 2: deploy the system using deploy.sh script. 
+2. deploy the system using deploy.sh script. 
 NOTE!: you need port 5001 will be available on the hosted machine. 
+3. entrypoint.sh is the deploy entrypoint, which upload the DB and the flask server. 
 
 ## Clone the repository.
 
@@ -42,4 +43,3 @@ NOTE!: in all the other 4 request need to add 'patient_id'.
 2. "session_id" is uniqe per patient - can't be 2 "session_id" with the same seriel number.
 3. "start_time" & "end_time" must be syncronized. 
 4. "movement_data" is in JSON format as presented above. 
-
