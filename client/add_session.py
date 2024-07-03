@@ -9,7 +9,7 @@ def add_session():
     # Add a new session
     new_session = {
         "patient_id": "shawn",
-        "session_id": "1",
+        "session_id": "3",
         "start_time": "2023-07-01T12:00:00Z",
         "end_time": "2023-07-01T12:30:00Z",
         "movement_data": {
@@ -59,7 +59,6 @@ def session_is_exist(patient_id, session_id):
             print(f"Error: Non-JSON response received from {base_url}/get_session/{patient_id}/{session_id}")
             return False
     else:
-        print(f"Error: {response.status_code} - {response.text}")
         return False
 
 if __name__ == "__main__":
