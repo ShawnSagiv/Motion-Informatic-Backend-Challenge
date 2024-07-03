@@ -59,7 +59,7 @@ def session_is_exist(patient_id, session_id):
             print(f"Error: Non-JSON response received from {base_url}/get_session/{patient_id}/{session_id}")
             return False
     else:
-        # print(f"Error: {response.status_code} - {response.text}")
+        print(f"Error: {response.status_code} - {response.text}")
         return False
 
 if __name__ == "__main__":
