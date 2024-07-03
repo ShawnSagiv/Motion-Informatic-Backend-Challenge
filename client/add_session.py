@@ -9,7 +9,7 @@ def add_session():
     # Add a new session
     new_session = {
         "patient_id": "shawn",
-        "session_id": "9",
+        "session_id": "1",
         "start_time": "2023-07-01T12:00:00Z",
         "end_time": "2023-07-01T12:30:00Z",
         "movement_data": {
